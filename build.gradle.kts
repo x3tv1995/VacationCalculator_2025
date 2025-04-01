@@ -21,13 +21,7 @@ configurations {
 
 repositories {
     mavenCentral()
-//    maven {
-//        url = uri("https://company/com/maven2")
-//    }
-//    mavenLocal()
-//    flatDir {
-//        dirs("libs")
-//    }
+
 
 
 }
@@ -35,7 +29,7 @@ repositories {
 dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-web")
-    // Lombok (annotation processing - getters/setters etc.)
+
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     testCompileOnly("org.projectlombok:lombok")
@@ -46,9 +40,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 
-    // Spring Boot DevTools (optional - for automatic restarts etc. during development)
+
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+
 }
 
 tasks.withType<Test> {
